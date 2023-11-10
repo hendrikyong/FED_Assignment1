@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  background-color: #000;
+  height: 155px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbarContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  padding-left: 510px;
+  height: 80px;
+  width: auto;
+}
+
+hr {
+  background-color: #7e7e7e;
+  margin-bottom: 55px;
+}
