@@ -53,7 +53,19 @@ h2 {
   height: 377px;
   width: 869px;
   border-radius: 8px;
-  margin-bottom: 200px;
+  margin-bottom: 0px;
+}
+
+.welcome {
+  text-align: center;
+}
+
+.NGSDesc {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  font-size: 18px;
 }
 
 .footer {
@@ -63,6 +75,7 @@ h2 {
   display: flex;
   flex-direction: row;
 }
+
 .about {
   color: white;
   display: inline-block;
@@ -84,4 +97,42 @@ h2 {
   width: 1px;
   background-color: white;
   margin: 25px 0px 0px 70px;
+}
+
+.socialsContainer {
+  color: white;
+  margin: 50px;
+}
+
+.followUs {
+  margin-bottom: 0px;
+}
+
+.followLine {
+  background-color: white;
+  height: 1px;
+  width: 450px;
+}
+
+.instagram {
+  height: 25px;
+  width: 25px;
+  margin-right: 20px;
+}
+
+.facebook {
+  height: 25px;
+  width: 25px;
+  margin-right: 20px;
+}
+
+.twitter {
+  height: 25px;
+  width: 25px;
+  margin-right: 20px;
+}
+
+.youtube {
+  height: 25px;
+  width: 35px;
 }
