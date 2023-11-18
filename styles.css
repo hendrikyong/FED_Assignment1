@@ -102,3 +102,51 @@
 .followUs {
   margin-bottom: 0px;
 }
+
+.thumbnail {
+  height: 453px;
+  width: 100%;
+}
+
+.vision {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.vision h2 {
+  margin-bottom: 0px;
+  margin-top: 64px;
+}
+
+.vision p {
+  margin-top: 8px;
+}
+
+.mission {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.mission h2 {
+  margin: 0px;
+  margin-top: 64px;
+}
+
+.mission p {
+  max-width: 800px;
+}
+
+.learn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.learn iframe {
+  margin-bottom: 40px;
+}
