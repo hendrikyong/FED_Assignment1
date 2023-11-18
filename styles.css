@@ -164,3 +164,16 @@
 .experience p {
   max-width: 300px;
 }
+
+.collections h3 {
+  margin: 25px 0px 0px 70px;
+}
+
+.collections p {
+  max-width: 800px;
+  margin: 10px 0px 0px 70px;
+}
+
+.collections iframe {
+  margin: 50px 0px 30px 350px;
+}
