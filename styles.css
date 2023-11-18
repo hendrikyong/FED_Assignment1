@@ -150,3 +150,17 @@
 .learn iframe {
   margin-bottom: 40px;
 }
+
+.planTripContent {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 40px;
+}
+
+.planTrip p {
+  max-width: 300px;
+}
+
+.experience p {
+  max-width: 300px;
+}
