@@ -3,23 +3,23 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" href="Images/NGS logo.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hendrik's Website Revamp</title>
-    <link href="normalize.css" rel="stylesheet">
-    <link href="styles.css" rel="stylesheet">
+    <title>Hendrik's Web Revamp</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="myScript.js"></script>
 </head>
 
 <body>
     <nav class="navbar">
         <div class="navbarContainer">
             <div class="logo">
-                <a href="index.html"><img src="Images/NGS logo.png" alt="National Gallery Singapore Logo"></a>
+                <a href="index.html" id="logo"><img src="Images/NGS logo.png" alt="National Gallery Singapore Logo"></a>
             </div>
             <div class="line"></div>
             <ul class="menu">
                 <li class="navbarItem">
-                    <a href="whatsOn.html" id="navbarLink">WHAT'S ON</a>
+                    <a href="WhatsOn.html" id="navbarLink">WHAT'S ON</a>
                 </li>
                 <li class="navbarItem">
                     <a href="planVisit.html" id="navbarLink">PLAN YOUR VISIT</a>
@@ -32,44 +32,51 @@
                 </li>
             </ul>
         </div>
-        <img id="NGSOuter" src="Images/NGS Outer.png" alt="national gallery outside">
-
-
-        <div class="footer">
-            <div class="about">
-                <h3>ABOUT</h3>
-                <p>THE ART AND SOUL OF SOUTHEAST ASIA</p>
-            </div>
-            <div class="contact">
-                <h3>CONTACT US</h3>
-                <p>
-                    email: <a href="mailto:info@nationalgallery.sg" class="contactDetails">info@nationalgallery.sg</a>
-                </p>
-                <p>
-                    phone: <a href="tel: +65 6690 9400" class="contactDetails">6690 9400</a>
-                </p>
-                <p>
-                    location: <a href="https://maps.app.goo.gl/GerQKVTn5QkaHGeg7" target="_blank"
-                        class="contactDetails">1 St Andrew's
-                        Route</a>
-                </p>
-            </div>
-            <div class="line"></div>
-
-            <div class="socialsContainer">
-                <h3 class="followUs">FOLLOW US</h3>
-                <hr class="followLine">
-                <a href="https://www.instagram.com/nationalgallerysingapore/" target="_blank"><img
-                        src="Images/instagram.256x256.png" alt="instagram icon" class="instagram"></a>
-                <a href="https://www.facebook.com/nationalgallerysg" target="_blank"><img
-                        src="Images/facebook.256x256.png" alt="facebook icon" class="facebook"></a>
-                <a href="https://twitter.com/natgallerysg" target="_blank"><img src="Images/twitter.256x208.png"
-                        alt="twitter icon" class="twitter"></a>
-                <a href="https://www.youtube.com/user/nationalgallerysg" target="_blank"><img src="Images/youtube.png"
-                        alt="youtube icon" class="youtube"></a>
-            </div>
-        </div>
     </nav>
+
+    <img name="slide" width="100%" height="453px">
+
+    <div class="highlightExhibition">
+        <h2>HIGHLIGHTS</h2>
+        <div class="highlights">
+            <img class="highlightsSlide" src="Images/Supreme Court.png" alt="Supreme court">
+        </div>
+        <h3 class="welcome">Welcome to National Gallery Singapore</h3>
+        <p class="NGSDesc">National Gallery Singapore is a leading visual arts institution which oversees the
+            world’s largest public
+            collection of Singapore and Southeast Asian modern art. Situated at the birthplace of modern Singapore,
+            in the heart of the Civic District, the Gallery is housed in two national monuments - City Hall and
+            former Supreme Court - that have been beautifully restored and transformed into this exciting
+            64,000-square-metre venue
+        </p>
+    </div>
+
+    <div class="footer">
+        <div class="about">
+            <h3>ABOUT</h3>
+            <p>THE ART AND SOUL OF SOUTHEAST ASIA</p>
+        </div>
+        <div class="contact">
+            <h3>CONTACT US</h3>
+            <p>email: <a href="mailto:info@nationalgallery.sg" class="contactDetails">info@nationalgallery.sg</a></p>
+            <p>phone: <a href="tel:+65 6690 9400" class="contactDetails">6690 9400</a></p>
+            <p>location: <a href="https://maps.app.goo.gl/GerQKVTn5QkaHGeg7" target="_blank" class="contactDetails">1 St
+                    Andrew's Route</a></p>
+        </div>
+        <div class="line"></div>
+
+        <div class="socialsContainer">
+            <h3 class="followUs">FOLLOW US</h3>
+            <hr class="followLine">
+            <a href="https://www.instagram.com/nationalgallerysingapore/" target="_blank"><img
+                    src="Images/instagram.256x256.png" alt="instagram icon" class="socialIcon"></a>
+            <a href="https://www.facebook.com/nationalgallerysg" target="_blank"><img src="Images/facebook.256x256.png"
+                    alt="facebook icon" class="socialIcon"></a>
+            <a href="https://twitter.com/natgallerysg" target="_blank"><img src="Images/twitter.256x208.png"
+                    alt="twitter icon" class="socialIcon"></a>
+            <a href="https://www.youtube.com/user/nationalgallerysg" target="_blank"><img src="Images/youtube.png"
+                    alt="youtube icon" class="youtube"></a>
+        </div>
 </body>
 
 </html>

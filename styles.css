@@ -11,12 +11,9 @@
   margin-left: 40px;
 }
 
-.logo {
+#logo {
   display: flex;
   justify-content: center;
-}
-
-img {
   height: 80px;
 }
 
@@ -24,7 +21,6 @@ img {
   list-style-type: none;
   display: flex;
   flex-direction: row;
-  display: flex;
   justify-content: space-around;
   margin-top: 25px;
 }
@@ -34,38 +30,27 @@ img {
   text-decoration: none;
 }
 
-.imageSlideshow img {
-  width: 100%;
-  height: 453px;
+.highlightExhibition h2 {
+  margin: 100px 0px 50px 150px;
 }
 
-h2 {
-  margin-left: 150px;
-  margin-top: 50px;
+.highlightsSlide {
+  height: 375px;
+  width: 910px;
+  margin-left: 185px;
+  border-radius: 4px;
 }
-
-.highlightExhibition {
-  margin-left: 180px;
-}
-
-.highlightExhibition img {
-  margin-top: 50px;
-  height: 377px;
-  width: 869px;
-  border-radius: 8px;
-  margin-bottom: 0px;
-}
-
+/*add the image stuff here for exhibitions slide show*/
 .welcome {
   text-align: center;
 }
 
 .NGSDesc {
+  display: flex;
+  justify-content: center;
   text-align: center;
-  max-width: 800px;
-  margin: 0 auto;
-  margin-bottom: 20px;
-  font-size: 18px;
+  max-width: 700px;
+  margin-left: 285px;
 }
 
 .footer {
@@ -74,16 +59,15 @@ h2 {
   background-color: black;
   display: flex;
   flex-direction: row;
+  color: white;
 }
 
 .about {
-  color: white;
   display: inline-block;
   margin: 50px 0px 0px 25px;
 }
 
 .contact {
-  color: white;
   display: inline-block;
   margin: 50px 0px 0px 70px;
 }
@@ -104,29 +88,7 @@ h2 {
   margin: 50px;
 }
 
-.followUs {
-  margin-bottom: 0px;
-}
-
-.followLine {
-  background-color: white;
-  height: 1px;
-  width: 450px;
-}
-
-.instagram {
-  height: 25px;
-  width: 25px;
-  margin-right: 20px;
-}
-
-.facebook {
-  height: 25px;
-  width: 25px;
-  margin-right: 20px;
-}
-
-.twitter {
+.socialIcon {
   height: 25px;
   width: 25px;
   margin-right: 20px;
@@ -137,32 +99,6 @@ h2 {
   width: 35px;
 }
 
-#NGSBuilding {
-  width: 100%;
-  height: 453px;
-}
-
-#NGSInside {
-  width: 100%;
-  height: 453px;
-}
-
-#NGSOuter {
-  width: 100%;
-  height: 453px;
-}
-
-#Stairs {
-  width: 100%;
-  height: 453px;
-}
-
-.event {
-  display: flex;
-  flex-direction: row;
-  border: red dotted 1px;
-}
-
-.events {
-  border: red dotted 1px;
+.followUs {
+  margin-bottom: 0px;
 }
