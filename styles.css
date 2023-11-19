@@ -1,3 +1,6 @@
+html {
+  overflow-x: hidden;
+}
 .navbarContainer {
   height: 150px;
   background-color: black;
@@ -165,7 +168,7 @@
   max-width: 300px;
 }
 
-.collections h3 {
+.collections h2 {
   margin: 25px 0px 0px 70px;
 }
 
@@ -175,5 +178,33 @@
 }
 
 .collections iframe {
-  margin: 50px 0px 30px 350px;
+  margin: 50px 0px 30px 300px;
+}
+
+.currentExhibitions h2 {
+  margin: 50px 0px 10px 70px;
+}
+
+.exhibition {
+  display: flex;
+  justify-content: center;
+  max-width: 800px;
+  margin: 25px 0px 25px 150px;
+}
+
+.exhibition img {
+  height: 162px;
+  width: 210px;
+}
+
+.exhibitionDesc {
+  font-size: 14px;
+}
+
+.exhibitionTitle p {
+  margin: 0px;
+}
+
+.exhibitionInfo {
+  margin: 10px 0px 0px 10px;
 }
