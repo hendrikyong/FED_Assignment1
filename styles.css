@@ -111,10 +111,11 @@ body {
 .about {
   max-width: 200px;
   margin-top: 20px;
+  margin-left: 40px;
 }
 
 .contact {
-  margin-left: 90px;
+  margin-left: 60px;
   margin-top: 20px;
 }
 
@@ -174,6 +175,8 @@ body {
 
 .thumbnail {
   width: 100%;
+  height: 453px;
+  object-fit: fill;
 }
 
 .exhibition {
@@ -217,4 +220,69 @@ body {
 
 .experience p {
   max-width: 300px;
+}
+
+.collections h2 {
+  margin: 25px 0px 0px 70px;
+}
+
+.collections p {
+  max-width: 900px;
+  margin: 40px 0px 0px 200px;
+}
+
+.collections iframe {
+  margin: 50px 0px 30px 362px;
+}
+
+.more h2 {
+  display: flex;
+  justify-content: center;
+}
+
+.vision {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.vision h2 {
+  margin-bottom: 0px;
+  margin-top: 64px;
+}
+
+.vision p {
+  margin-top: 8px;
+}
+
+.mission {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.mission h2 {
+  margin: 0px;
+  margin-top: 64px;
+}
+
+.mission p {
+  max-width: 800px;
+  text-align: center;
+}
+
+.learn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.learn iframe {
+  margin-bottom: 40px;
+  height: 400px;
+  width: 800px;
+  margin-left: 20px;
 }
