@@ -21,3 +21,29 @@ function changeImg() {
 }
 
 window.onload = changeImg;
+
+function submitForm() {
+  var fullName = document.getElementById("fullName").value;
+  var email = document.getElementById("email").value;
+  var numTickets = document.getElementById("numTickets").value;
+  var preferredDate = document.getElementById("preferredDate").value;
+
+  // You can add additional validation logic here
+
+  // Displaying the collected information (you can modify this part)
+  alert(
+    "Ticket Purchase Summary:\n\nFull Name: " +
+      fullName +
+      "\nEmail: " +
+      email +
+      "\nNumber of Tickets: " +
+      numTickets +
+      "\nPreferred Date: " +
+      preferredDate
+  );
+
+  // You can also send this information to a server for processing
+
+  // Optionally, you can reset the form after submission
+  document.getElementById("ticketForm").reset();
+}
