@@ -28,9 +28,6 @@ function submitForm() {
   var numTickets = document.getElementById("numTickets").value;
   var preferredDate = document.getElementById("preferredDate").value;
 
-  // You can add additional validation logic here
-
-  // Displaying the collected information (you can modify this part)
   alert(
     "Ticket Purchase Summary:\n\nFull Name: " +
       fullName +
@@ -42,8 +39,5 @@ function submitForm() {
       preferredDate
   );
 
-  // You can also send this information to a server for processing
-
-  // Optionally, you can reset the form after submission
   document.getElementById("ticketForm").reset();
 }
