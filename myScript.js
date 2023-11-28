@@ -29,8 +29,17 @@ function submitForm() {
   var numTickets = document.getElementById("numTickets").value;
   var preferredDate = document.getElementById("preferredDate").value;
 
+  var ticketPrice = 0;
+  if (nationality === "Singaporean/PR") {
+    ticketPrice = 0;
+  } else if (nationality === "Non-Singaporean") {
+    ticketPrice = 13;
+  }
+
+  var totalPrice = ticketPrice * numTickets;
+
   var checkoutURL =
-    "checkOut.html" +
+    "checkout.html" +
     "?fullName=" +
     encodeURIComponent(fullName) +
     "&nationality=" +
@@ -40,11 +49,11 @@ function submitForm() {
     "&numTickets=" +
     encodeURIComponent(numTickets) +
     "&preferredDate=" +
-    encodeURIComponent(preferredDate);
+    encodeURIComponent(preferredDate) +
+    "&totalPrice=" +
+    encodeURIComponent(totalPrice);
 
   window.location.href = checkoutURL;
-
-  document.getElementById("ticketForm").reset();
 }
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -55,10 +64,12 @@ document.addEventListener("DOMContentLoaded", function () {
   var email = urlParams.get("email");
   var numTickets = urlParams.get("numTickets");
   var preferredDate = urlParams.get("preferredDate");
+  var totalPrice = urlParams.get("totalPrice");
 
   document.getElementById("fullNameOutput").textContent = fullName;
   document.getElementById("nationalityOutput").textContent = nationality;
   document.getElementById("emailOutput").textContent = email;
   document.getElementById("numTicketsOutput").textContent = numTickets;
   document.getElementById("preferredDateOutput").textContent = preferredDate;
+  document.getElementById("totalPriceOutput").textContent = "$" + totalPrice;
 });

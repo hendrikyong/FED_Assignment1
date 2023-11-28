@@ -54,13 +54,13 @@ body {
 
 .slider-wrapper {
   position: relative;
-  max-width: 48rem;
+  width: 850px;
   margin: 0 auto;
 }
 
 .slider {
   display: flex;
-  aspect-ratio: 12/8;
+  aspect-ratio: 9/5;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
@@ -196,11 +196,11 @@ body {
 }
 
 .exhibition p {
-  margin: 0;
+  margin: 0 0 5px 0;
 }
 
 .exhibitionInfo {
-  margin: 10px 0px 0px 10px;
+  margin: 0px 0px 0px 10px;
 }
 
 .currentExhibitions h2 {
@@ -210,8 +210,7 @@ body {
 .planTripContent {
   display: flex;
   justify-content: space-around;
-  margin-bottom: 40px;
-  margin-top: 30px;
+  margin: 30px 0 40px 20px;
 }
 
 .planTrip p {
@@ -333,14 +332,12 @@ button:hover {
 }
 
 .contentsContainer {
-  border: red 3px dotted;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.contents {
-  border: 2px red dotted;
+.contentsCheckout {
   margin: 50px;
   height: 700px;
   width: 600px;
@@ -351,12 +348,10 @@ button:hover {
 }
 
 .contents img {
-  border: blue 3px dotted;
   width: 200px;
 }
 
 .bookingDetails h1 {
-  border: grey 2px dotted;
   text-align: center;
   margin: 10px 0 5px 0;
   padding: 0;
@@ -364,20 +359,17 @@ button:hover {
 }
 
 .bookingDetails {
-  border: 3px dotted aqua;
   display: flex;
   flex-direction: column;
 }
 
 .bookingHeader {
-  border: red 2px dotted;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .fullNameOut {
-  border: red 2px dotted;
   text-align: left;
   margin: 0 0 20px 0;
 }
@@ -392,10 +384,38 @@ button:hover {
 
 .nationalityOut {
   margin: 8px 0 8px 0;
-  border: red 3px dotted;
 }
 
 .emailOut {
-  border: red 3px dotted;
   margin: 0;
+}
+
+.data {
+  margin: 30px 0 25px 0;
+}
+
+.backgroundInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 35px;
+}
+
+.backgroundInfo h2 {
+  text-align: center;
+}
+.backgroundInfo p {
+  text-align: center;
+  max-width: 600px;
+}
+
+.buyTicket {
+  height: 30px;
+  width: 100px;
+  margin: 10px 0 0 450px;
+  background-color: #4caf50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
 }

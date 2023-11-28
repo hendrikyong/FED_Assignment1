@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hendrik's Web Revamp</title>
+    <link rel="icon" href="Images/NGS logo.png">
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="styles.css">
     <script src="myScript.js"></script>
@@ -31,7 +32,7 @@
     </nav>
 
     <div class="contentsContainer">
-        <div class="contents">
+        <div class="contentsCheckout">
             <div class="bookingDetails">
                 <div class="bookingHeader">
                     <img src="Images/NGS Logo White.png" alt="National gallery singapore" height="100px"></img>
@@ -39,15 +40,26 @@
                     <hr style="background-color: black; width: 500px;">
                 </div>
 
-                <p class="fullNameOut">Dear <span id="fullNameOutput"></span>,</p>
-                <p class="booking"><u>Booking Confirmation</u></p>
-                <p class="nationalityOut">General Admission<br>
-                <ul>
-                    <li><span id="nationalityOutput"></span></li>
+                <div class="data">
+                    <p>Name: <span id="fullNameOutput"></span></p>
+                    <p>Nationality: <span id="nationalityOutput"></span></p>
+                    <p>Ticket date: <span id="preferredDateOutput"></span></p>
+                    <p>Number of tickets: <span id="numTicketsOutput"></span></p>
+                    <p>Total ticket price: <span id="totalPriceOutput"></span></p>
+                    <p>Confirmation email sent to <span id="emailOutput"></span></p>
+                </div>
+
+                <hr style="background-color: black; width: 500px;">
+
+                <h3 style="color: #B4171E; margin-bottom: 0;">Terms & Conditions</h3>
+                <p style="font-size: 15px;">Free Admission for:</p>
+                <ul style="font-size: 12px;">
+                    <li>Gallery Insiders</li>
+                    <li>Children aged 6 and below</li>
+                    <li>Local/ locally-based students and teachers^</li>
+                    <li>Persons with disabilities (PWD) and their caregiver</li>
                 </ul>
-                </p>
-                <p class="emailOut">Confirmation email sent to <span id="emailOutput"></span></p>
-                <p class="dateOut">Date: <span id="preferredDateOutput"></span></p>
+                <p style="font-size: 12px;">^From qualifying institutions only.</p>
             </div>
         </div>
     </div>
