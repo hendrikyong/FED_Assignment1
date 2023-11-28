@@ -24,20 +24,41 @@ window.onload = changeImg;
 
 function submitForm() {
   var fullName = document.getElementById("fullName").value;
+  var nationality = document.getElementById("nationality").value;
   var email = document.getElementById("email").value;
   var numTickets = document.getElementById("numTickets").value;
   var preferredDate = document.getElementById("preferredDate").value;
 
-  alert(
-    "Ticket Purchase Summary:\n\nFull Name: " +
-      fullName +
-      "\nEmail: " +
-      email +
-      "\nNumber of Tickets: " +
-      numTickets +
-      "\nPreferred Date: " +
-      preferredDate
-  );
+  var checkoutURL =
+    "checkOut.html" +
+    "?fullName=" +
+    encodeURIComponent(fullName) +
+    "&nationality=" +
+    encodeURIComponent(nationality) +
+    "&email=" +
+    encodeURIComponent(email) +
+    "&numTickets=" +
+    encodeURIComponent(numTickets) +
+    "&preferredDate=" +
+    encodeURIComponent(preferredDate);
+
+  window.location.href = checkoutURL;
 
   document.getElementById("ticketForm").reset();
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+  var urlParams = new URLSearchParams(window.location.search);
+
+  var fullName = urlParams.get("fullName");
+  var nationality = urlParams.get("nationality");
+  var email = urlParams.get("email");
+  var numTickets = urlParams.get("numTickets");
+  var preferredDate = urlParams.get("preferredDate");
+
+  document.getElementById("fullNameOutput").textContent = fullName;
+  document.getElementById("nationalityOutput").textContent = nationality;
+  document.getElementById("emailOutput").textContent = email;
+  document.getElementById("numTicketsOutput").textContent = numTickets;
+  document.getElementById("preferredDateOutput").textContent = preferredDate;
+});

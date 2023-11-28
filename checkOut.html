@@ -30,32 +30,27 @@
         </div>
     </nav>
 
-    <div class="ticketName">
-        <h2>National Gallery Singapore Tickets</h2>
+    <div class="contentsContainer">
+        <div class="contents">
+            <div class="bookingDetails">
+                <div class="bookingHeader">
+                    <img src="Images/NGS Logo White.png" alt="National gallery singapore" height="100px"></img>
+                    <h1>Booking Confirmation Details</h1>
+                    <hr style="background-color: black; width: 500px;">
+                </div>
+
+                <p class="fullNameOut">Dear <span id="fullNameOutput"></span>,</p>
+                <p class="booking"><u>Booking Confirmation</u></p>
+                <p class="nationalityOut">General Admission<br>
+                <ul>
+                    <li><span id="nationalityOutput"></span></li>
+                </ul>
+                </p>
+                <p class="emailOut">Confirmation email sent to <span id="emailOutput"></span></p>
+                <p class="dateOut">Date: <span id="preferredDateOutput"></span></p>
+            </div>
+        </div>
     </div>
-
-    <form id="ticketForm">
-        <label for="fullName">Full Name:</label>
-        <input type="text" id="fullName" name="fullName" required>
-
-        <label for="nationality">Nationality</label>
-        <select id="nationality" name="nationality" required style="width: 400px; height: 38px;">
-            <option value="-">---</option>
-            <option value="Singaporean/PR">Singaporean/PR</option>
-            <option value="Non-Singaporean">Non-Singaporean</option>
-        </select>
-
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-
-        <label for="numTickets">Number of Tickets:</label>
-        <input type="number" id="numTickets" name="numTickets" pattern="[1-9][0-9]*" min="1" max="10" required>
-
-        <label for="preferredDate">Date:</label>
-        <input type="date" id="preferredDate" name="preferredDate" required>
-
-        <button type="button" onclick="submitForm()">Purchase Tickets</button>
-    </form>
 
     <div class="footer">
         <div class="about">
