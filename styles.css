@@ -378,6 +378,16 @@ button:hover {
   margin: 8px 0 8px 0;
 }
 
+.bookingHeader hr {
+  background-color: black;
+  width: 500px;
+}
+
+.bookingDetails hr {
+  background-color: black;
+  width: 500px;
+}
+
 .bookingDetails ul {
   margin: 0;
 }
@@ -420,7 +430,12 @@ button:hover {
   border-radius: 4px;
 }
 
-@media (max-width: 450px) {
+.bookingDetails h3 {
+  color: #b4171e;
+  margin-bottom: 0;
+}
+
+@media (max-width: 425px) {
   .navbar {
     height: 100px;
     width: 390px;
@@ -599,5 +614,77 @@ button:hover {
     margin: 0;
     height: 200px;
     width: 380px;
+  }
+
+  .ticketName {
+    margin: 0 0 20px 35px;
+  }
+
+  form {
+    max-width: 300px;
+    margin: auto;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  #nationality {
+    max-width: 300px;
+    height: 38px;
+    margin-bottom: 16px;
+  }
+
+  .contentsContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contentsCheckout {
+    margin: 50px;
+    height: 400px;
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+  }
+
+  .bookingHeader h1 {
+    font-size: 18px;
+  }
+
+  .bookingHeader hr {
+    width: 250px;
+  }
+
+  .data {
+    margin: 0;
+  }
+
+  .data p {
+    margin-left: 20px;
+    font-size: 12px;
+  }
+
+  .bookingDetails hr {
+    background-color: black;
+    width: 250px;
+  }
+
+  .bookingDetails h3 {
+    font-size: 12px;
+  }
+
+  .bookingDetails p {
+    font-size: 10px;
+    margin: 5px;
+  }
+
+  .bookingDetails ul {
+    font-size: 6px;
+  }
+
+  .bookingDetails .addInfo {
+    font-size: 6px;
   }
 }
