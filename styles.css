@@ -419,3 +419,185 @@ button:hover {
   align-items: center;
   border-radius: 4px;
 }
+
+@media (max-width: 450px) {
+  .navbar {
+    height: 100px;
+    width: 390px;
+  }
+
+  .logo {
+    display: flex;
+    justify-content: left;
+  }
+
+  #logo {
+    display: inline-block;
+  }
+
+  .logo img {
+    margin: 15px 0 0 20px;
+    height: 70px;
+  }
+
+  .navbarContainer .line {
+    display: none;
+  }
+
+  .slider-wrapper {
+    width: 350px;
+  }
+
+  .backgroundInfo {
+    max-width: 350px;
+    margin-left: 15px;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    height: 650px;
+  }
+
+  .contact {
+    margin: 5px 0 0 40px;
+  }
+
+  .footer > .line {
+    display: none;
+  }
+
+  .follow .line {
+    display: none;
+  }
+
+  .sitemap {
+    margin: 5px 0 0 40px;
+  }
+
+  .follow {
+    margin: 5px 0 0 40px;
+  }
+
+  .toggleButton {
+    width: 35px;
+    position: absolute;
+    right: 40px;
+    top: 40px;
+  }
+
+  .toggleButton span {
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    float: left;
+    margin-bottom: 8px;
+  }
+
+  #menu {
+    display: none;
+    width: 100%;
+    border-top: 1px solid #000;
+    padding-top: 20px;
+    margin-top: 30px;
+  }
+  #menu ul li {
+    padding: 15px 0px;
+    width: 100%;
+  }
+  #menu .show {
+    display: block;
+  }
+
+  .navbar:hover #menu {
+    display: block;
+  }
+
+  .thumbnail {
+    height: 185px;
+  }
+
+  .currentExhibitions h2 {
+    margin: 30px 0 0 50px;
+  }
+
+  .currentExhibitions {
+    margin: 0;
+  }
+
+  .exhibition {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0 50px 0;
+  }
+
+  .exhibitionTitle {
+    max-width: 300px;
+    margin-top: 20px;
+  }
+  .exhibitionDesc {
+    max-width: 300px;
+  }
+
+  .exhibition img {
+    height: 175px;
+    width: 350px;
+  }
+
+  .buyTicket {
+    margin: 20px 0 0 100px;
+  }
+
+  .planTripContent {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .collections {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .collections h2 {
+    margin: 25px 0 25px 20px;
+  }
+
+  .collections p {
+    margin: 0;
+    max-width: 300px;
+    text-align: center;
+  }
+
+  .collections iframe {
+    margin: 25px 0 25px 0;
+    height: 200px;
+    width: 380px;
+  }
+
+  .contents {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .vision p {
+    text-align: center;
+  }
+
+  .mission p {
+    text-align: center;
+  }
+
+  .learn h2 {
+    text-align: center;
+  }
+
+  .learn iframe {
+    margin: 0;
+    height: 200px;
+    width: 380px;
+  }
+}

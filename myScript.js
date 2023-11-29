@@ -73,3 +73,8 @@ document.addEventListener("DOMContentLoaded", function () {
   document.getElementById("preferredDateOutput").textContent = preferredDate;
   document.getElementById("totalPriceOutput").textContent = "$" + totalPrice;
 });
+
+function myFunction() {
+  var navbar = document.getElementById("menu");
+  navbar.classList.toggle("show");
+}
