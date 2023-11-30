@@ -102,7 +102,7 @@ function submitForm() {
   sessionStorage.setItem("totalPrice", totalPrice);
 
   var checkoutURL =
-    "checkout.html" +
+    "/checkout.html" +
     "?fullName=" +
     encodeURIComponent(fullName) +
     "&nationality=" +
