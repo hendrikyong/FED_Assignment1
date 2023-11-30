@@ -1,4 +1,4 @@
-var i = 0;
+/*var i = 0;
 var images = [];
 var time = 3500;
 
@@ -21,6 +21,58 @@ function changeImg() {
 }
 
 window.onload = changeImg;
+*/
+
+var i = 0;
+var images = [];
+var time = 3500;
+var timeoutId;
+
+images[0] = "Images/Supreme Court.png";
+images[1] = "Images/Blank Blue Person.png";
+images[2] = "Images/Art On Wall2.png";
+images[3] = "Images/Chess Floor.png";
+images[4] = "Images/Art On Wall.png";
+
+document.addEventListener("DOMContentLoaded", function () {
+  startSlideshow(); // Start the slideshow when the DOM is fully loaded
+});
+
+function startSlideshow() {
+  changeImg(); // Initial call to changeImg
+}
+
+function changeImg() {
+  var imgElement = document.getElementById("slide");
+
+  if (imgElement) {
+    imgElement.src = images[i];
+
+    if (i < images.length - 1) {
+      i++;
+    } else {
+      i = 0;
+    }
+
+    // Clear the existing timeout
+    clearTimeout(timeoutId);
+
+    // Set a new timeout for the next image
+    timeoutId = setTimeout(changeImg, time);
+  } else {
+    console.error("Element with ID 'slide' not found.");
+  }
+}
+
+// Call this function when the user leaves the page or resets the slideshow
+function stopSlideshow() {
+  clearTimeout(timeoutId);
+}
+
+// Example: Call stopSlideshow when navigating away from the page
+window.addEventListener("unload", function () {
+  stopSlideshow();
+});
 
 function submitForm() {
   var fullName = document.getElementById("fullName").value;
