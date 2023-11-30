@@ -66,6 +66,13 @@ document.addEventListener("DOMContentLoaded", function () {
   var preferredDate = urlParams.get("preferredDate");
   var totalPrice = urlParams.get("totalPrice");
 
+  console.log("fullName:", fullName);
+  console.log("nationality:", nationality);
+  console.log("email:", email);
+  console.log("numTickets:", numTickets);
+  console.log("preferredDate:", preferredDate);
+  console.log("totalPrice:", totalPrice);
+
   document.getElementById("fullNameOutput").textContent = fullName;
   document.getElementById("nationalityOutput").textContent = nationality;
   document.getElementById("emailOutput").textContent = email;

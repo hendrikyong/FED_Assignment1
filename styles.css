@@ -435,6 +435,14 @@ button:hover {
   margin-bottom: 0;
 }
 
+.welcomeText {
+  position: absolute;
+  font-size: 72px;
+  margin: 150px 0 0 120px;
+  color: white;
+  opacity: 0.9;
+}
+
 /* ################################################################################################################ */
 @media (max-width: 425px) {
   .navbar {
@@ -698,5 +706,11 @@ button:hover {
 
   .bookingDetails .addInfo {
     font-size: 6px;
+  }
+
+  .welcomeText {
+    position: absolute;
+    font-size: 22px;
+    margin: 55px 0 0 40px;
   }
 }
