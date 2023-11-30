@@ -38,6 +38,17 @@ function submitForm() {
 
   var totalPrice = ticketPrice * numTickets;
 
+  if (isNaN(totalPrice)) {
+    totalPrice = 0;
+  }
+
+  sessionStorage.setItem("fullName", fullName);
+  sessionStorage.setItem("nationality", nationality);
+  sessionStorage.setItem("email", email);
+  sessionStorage.setItem("numTickets", numTickets);
+  sessionStorage.setItem("preferredDate", preferredDate);
+  sessionStorage.setItem("totalPrice", totalPrice);
+
   var checkoutURL =
     "checkout.html" +
     "?fullName=" +
@@ -57,14 +68,12 @@ function submitForm() {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-  var urlParams = new URLSearchParams(window.location.search);
-
-  var fullName = urlParams.get("fullName");
-  var nationality = urlParams.get("nationality");
-  var email = urlParams.get("email");
-  var numTickets = urlParams.get("numTickets");
-  var preferredDate = urlParams.get("preferredDate");
-  var totalPrice = urlParams.get("totalPrice");
+  var fullName = sessionStorage.getItem("fullName");
+  var nationality = sessionStorage.getItem("nationality");
+  var email = sessionStorage.getItem("email");
+  var numTickets = sessionStorage.getItem("numTickets");
+  var preferredDate = sessionStorage.getItem("preferredDate");
+  var totalPrice = sessionStorage.getItem("totalPrice");
 
   console.log("fullName:", fullName);
   console.log("nationality:", nationality);
