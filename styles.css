@@ -435,6 +435,7 @@ button:hover {
   margin-bottom: 0;
 }
 
+/* ################################################################################################################ */
 @media (max-width: 425px) {
   .navbar {
     height: 100px;
@@ -511,16 +512,27 @@ button:hover {
 
   #menu {
     display: none;
+    height: 100%;
     width: 100%;
     border-top: 1px solid #000;
     padding-top: 20px;
-    margin-top: 30px;
+    padding-bottom: 20px;
+    position: relative;
+    z-index: 100;
+    background-color: black;
   }
+
   #menu ul li {
     padding: 15px 0px;
     width: 100%;
   }
-  #menu .show {
+
+  #menu ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #menu.show {
     display: block;
   }
 
