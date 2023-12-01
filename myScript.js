@@ -81,6 +81,18 @@ function submitForm() {
   var numTickets = document.getElementById("numTickets").value;
   var preferredDate = document.getElementById("preferredDate").value;
 
+  // Validate if any of the required fields is blank
+  if (
+    fullName === "" ||
+    nationality === "" ||
+    email === "" ||
+    numTickets === "" ||
+    preferredDate === ""
+  ) {
+    alert("Please fill in all required fields.");
+    return; // Prevent form submission
+  }
+
   var ticketPrice = 0;
   if (nationality === "Singaporean/PR") {
     ticketPrice = 0;
