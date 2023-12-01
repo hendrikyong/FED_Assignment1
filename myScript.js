@@ -5,7 +5,7 @@ var timeoutId;
 
 images[0] = "Images/Supreme Court.png";
 images[1] = "Images/Blank Blue Person.png";
-images[2] = "Images/Art On Wall2.png";
+images[2] = "Images/Art On wall2.png";
 images[3] = "Images/Chess Floor.png";
 images[4] = "Images/Art On Wall.png";
 
